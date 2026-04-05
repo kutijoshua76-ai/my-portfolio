@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="112" height="112" x="4" y="4" rx="24" fill="#0a0a0a" stroke="url(#primaryGrad)" stroke-width="4" />
+  
+  <!-- Left Bracket < -->
+  <polyline points="35,40 15,60 35,80" fill="none" stroke="url(#primaryGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Letter J -->
+  <path d="M 50,45 v 20 a 8,8 0 0 1 -8,8 h 0" fill="none" stroke="#f8fafc" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Letter P -->
+  <path d="M 68,85 v -40 h 10 a 10,10 0 0 1 0,20 h -10" fill="none" stroke="#f8fafc" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Right Bracket > -->
+  <polyline points="85,40 105,60 85,80" fill="none" stroke="url(#primaryGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

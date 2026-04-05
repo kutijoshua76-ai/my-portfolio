@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | My Portfolio</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <div class="bg-motion bg-about"></div>
+
+  <nav class="glass">
+    <a href="index.html" class="logo-link">
+      <img src="/logo.svg" alt="JP Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk</a>
+  </nav>
+
+  <main class="sub-page">
+    <section id="about" class="container reveal">
+      <div class="about-content">
+        <h2 class="section-hero-title">The Developer</h2>
+        <p class="about-hero-text">
+          Passionate about crafting clean, reusable code and delightful user interfaces. With experience in full-stack
+          development, I bridge the gap between complex backend logic and pixel-perfect frontend design.
+        </p>
+        <div class="skills-cloud skills-container">
+          <span class="tag skill-tag-large">Modern JavaScript</span>
+          <span class="tag skill-tag-large">React & Next.js</span>
+          <span class="tag skill-tag-large">Node.js</span>
+          <span class="tag skill-tag-large">UI/UX Design</span>
+          <span class="tag skill-tag-large">HTML5/CSS</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2024 Dev Portfolio. Built with Passion.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</body>
+
+</html>

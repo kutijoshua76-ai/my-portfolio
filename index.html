@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Creative Developer</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <div class="bg-motion bg-home"></div>
+
+  <nav class="glass">
+    <a href="index.html" class="logo-link">
+      <img src="/logo.svg" alt="JP Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M4 12H3m15.364-6.364l-.707.707M6.364 17.636l-.707.707M6.364 6.364l-.707.707m12.728 12.728l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+      </svg>
+      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      </svg>
+    </button>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk</a>
+  </nav>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-profile reveal">
+        <img src="/profile.jpg" alt="JOSH" class="profile-img">
+      </div>
+      <h1 class="reveal">Hi I'm <span class="text-gradient">JOSH</span> by name</h1>
+      <p class="reveal role-text"><span id="typing-text"></span><span class="cursor">|</span></p>
+      <div class="hero-btns reveal">
+        <a href="projects.html" class="btn btn-primary">See My Projects</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2024 Dev Portfolio. Built with Passion.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</body>
+
+</html>
