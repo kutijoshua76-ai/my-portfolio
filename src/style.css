@@ -1337,3 +1337,8 @@ body {
     font-size: 1.4rem;
   }
 }
+
+.sc-outer.wide {
+  max-width: 1200px;
+}
+
