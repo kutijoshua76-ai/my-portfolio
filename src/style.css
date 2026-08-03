@@ -1060,16 +1060,16 @@ body {
   width: 400px;
   height: 500px;
   position: relative;
-  /* Soft vignette fade — fade bottom & sides, keep top fully visible */
-  -webkit-mask-image: radial-gradient(ellipse 80% 90% at 50% 40%, black 50%, transparent 80%);
-  mask-image: radial-gradient(ellipse 80% 90% at 50% 40%, black 50%, transparent 80%);
+  /* Soft vignette fade around the image */
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 70%);
+  mask-image: radial-gradient(circle at center, black 40%, transparent 70%);
 }
 
 .portrait-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 30%;
   border-radius: 20px;
 }
 
