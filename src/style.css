@@ -3,7 +3,7 @@
 :root {
   /* Color Palette - Default Dark */
   --bg-color: hsl(0, 0%, 0%);
-  --primary: #C3E41D;
+  --primary: #8b5cf6;
   --secondary: #fb7185;
   --text-main: hsl(0, 0%, 100%);
   --text-muted: #a3a3a3;
@@ -26,7 +26,7 @@
 
 [data-theme="light"] {
   --bg-color: hsl(0, 0%, 98%);
-  --primary: #C3E41D;
+  --primary: #8b5cf6;
   --secondary: #e11d48;
   --text-main: hsl(0, 0%, 10%);
   --text-muted: #525252;
@@ -365,6 +365,7 @@ section {
 .skills-cloud .tag:hover {
   background: var(--primary);
   border-color: var(--primary);
+  color: #ffffff;
   transform: translateY(-3px);
 }
 
