@@ -64,6 +64,16 @@ const handleActiveLink = () => {
       link.classList.add('active');
     }
   });
+
+  // Handle active highlighting for new dropdown menu-item
+  const menuItems = document.querySelectorAll('.menu-item');
+  menuItems.forEach(link => {
+    const href = link.getAttribute('href');
+    link.classList.remove('highlight');
+    if (href === currentPage) {
+      link.classList.add('highlight');
+    }
+  });
 };
 
 // Initialize
@@ -123,3 +133,81 @@ navLinks.forEach(link => {
 });
 
 // Smooth Scroll (already implemented above, but ensures logic is consistent)
+
+// --- NEW HOME PAGE LOGIC ---
+
+// New Theme Toggle
+const themeToggleNew = document.getElementById('theme-toggle-new');
+if (themeToggleNew) {
+  themeToggleNew.addEventListener('click', () => {
+    const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+  });
+}
+
+// New Home Page Menu Dropdown
+const menuToggle = document.getElementById('menu-toggle');
+const dropdownMenu = document.getElementById('dropdown-menu');
+const menuIcon = document.querySelector('.menu-icon');
+const closeIcon = document.querySelector('.close-icon');
+
+if (menuToggle && dropdownMenu) {
+  menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isHidden = dropdownMenu.classList.contains('hidden');
+    if (isHidden) {
+      dropdownMenu.classList.remove('hidden');
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+    } else {
+      dropdownMenu.classList.add('hidden');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!dropdownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      dropdownMenu.classList.add('hidden');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    }
+  });
+}
+
+// BlurText Logic
+const blurTextElements = document.querySelectorAll('.blur-text-wrapper');
+
+if (blurTextElements.length > 0) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  blurTextElements.forEach(el => {
+    const text = el.getAttribute('data-text') || '';
+    const animateBy = el.getAttribute('data-animate-by') || 'words';
+    const direction = el.getAttribute('data-direction') || 'top';
+    const delay = parseInt(el.getAttribute('data-delay')) || 100;
+
+    const segments = animateBy === 'words' ? text.split(' ') : text.split('');
+    el.innerHTML = '';
+
+    segments.forEach((segment, i) => {
+      const span = document.createElement('span');
+      span.textContent = segment + (animateBy === 'words' && i < segments.length - 1 ? '\u00A0' : '');
+      
+      // Set initial transform based on direction
+      const yOffset = direction === 'top' ? '-20px' : '20px';
+      span.style.transform = `translateY(${yOffset})`;
+      span.style.transitionDelay = `${i * delay}ms`;
+      
+      el.appendChild(span);
+    });
+
+    observer.observe(el);
+  });
+}
