@@ -1149,3 +1149,191 @@ body {
     padding: 1rem 1.5rem;
   }
 }
+
+/* =============================================
+   SOCIAL CONNECT - CONTACT PAGE
+   ============================================= */
+
+.social-connect-main {
+  min-height: calc(100vh - 72px);
+  background: linear-gradient(135deg, #111827 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem 2rem;
+  gap: 3rem;
+}
+
+.sc-heading {
+  text-align: center;
+  max-width: 640px;
+}
+
+.sc-title {
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #c084fc, #f472b6, #f87171);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.25rem;
+}
+
+.sc-title-white {
+  -webkit-text-fill-color: #ffffff;
+  background: none;
+}
+
+.sc-subtitle {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.sc-outer {
+  width: 100%;
+  max-width: 700px;
+}
+
+.sc-glowing-box {
+  background: linear-gradient(135deg, rgba(31,41,55,0.8), rgba(17,24,39,0.9));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  padding: 3rem 2.5rem;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow:
+    0 0 50px rgba(139, 92, 246, 0.45),
+    0 0 90px rgba(124, 58, 237, 0.25),
+    0 25px 50px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sc-glowing-box:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 0 60px rgba(139, 92, 246, 0.6),
+    0 0 100px rgba(124, 58, 237, 0.4),
+    0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.sc-icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.sc-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.sc-icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-size: 1.75rem;
+  color: #ffffff;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sc-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover lift + icon shake */
+.sc-icon:hover .sc-icon-circle {
+  transform: translateY(-10px) scale(1.1);
+}
+.sc-icon:hover .sc-label {
+  opacity: 1;
+  color: #ffffff;
+}
+.sc-icon:hover .sc-icon-circle i {
+  animation: sc-shake 0.5s ease;
+}
+
+/* Per-platform glow on hover */
+.sc-icon.whatsapp:hover .sc-icon-circle {
+  background: #25d366;
+  box-shadow: 0 0 24px rgba(37, 211, 102, 0.7);
+}
+.sc-icon.linkedin:hover .sc-icon-circle {
+  background: #0077b5;
+  box-shadow: 0 0 24px rgba(0, 119, 181, 0.7);
+}
+.sc-icon.twitter:hover .sc-icon-circle {
+  background: #1da1f2;
+  box-shadow: 0 0 24px rgba(29, 161, 242, 0.7);
+}
+.sc-icon.github:hover .sc-icon-circle {
+  background: #333333;
+  box-shadow: 0 0 24px rgba(51, 51, 51, 0.8);
+}
+.sc-icon.email:hover .sc-icon-circle {
+  background: linear-gradient(135deg, #c084fc, #f472b6);
+  box-shadow: 0 0 24px rgba(192, 132, 252, 0.7);
+}
+
+/* Shake keyframes */
+@keyframes sc-shake {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  20%       { transform: translateX(-5px) rotate(-5deg); }
+  40%       { transform: translateX(5px) rotate(5deg); }
+  60%       { transform: translateX(-5px) rotate(-5deg); }
+  80%       { transform: translateX(5px) rotate(5deg); }
+}
+
+/* Contact details row */
+.sc-contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sc-email-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.sc-email-link:hover {
+  color: #c084fc;
+}
+.sc-dot {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+  .sc-icons-row {
+    gap: 1.5rem;
+  }
+  .sc-glowing-box {
+    padding: 2rem 1.25rem;
+  }
+  .sc-icon-circle {
+    width: 64px;
+    height: 64px;
+    font-size: 1.4rem;
+  }
+}
