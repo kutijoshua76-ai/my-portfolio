@@ -1342,3 +1342,16 @@ body {
   max-width: 1200px;
 }
 
+.sc-glowing-box h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.75rem;
+}
+
+.sc-glowing-box .projects-grid {
+  margin-top: 0;
+}
+
+
