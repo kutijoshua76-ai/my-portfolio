@@ -5,56 +5,285 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me | My Portfolio</title>
+  <meta name="description" content="About Josh® — Creative Full Stack Web Developer, UI/UX Designer, and Digital Craftsman." />
+  <title>About & Philosophy | Josh®</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="./src/style.css" />
 </head>
 
 <body>
-  <div class="bg-motion bg-about"></div>
 
-  <!-- New Dark Header -->
-  <header class="derek-header">
-    <div class="logo">Josh&reg;</div>
-    <nav class="derek-nav">
-      <a href="index.html" class="nav-item">Home</a>
-      <a href="about.html" class="nav-item">About</a>
-      <a href="projects.html" class="nav-item">Work</a>
-      <a href="contact.html" class="nav-item">Contact</a>
+  <!-- Creative Mints Header -->
+  <header class="cm-header">
+    <a href="index.html" class="cm-logo">
+      <span>Josh</span><span class="cm-logo-symbol">&reg;</span>
+    </a>
+
+    <nav class="cm-nav-center">
+      <a href="index.html" class="cm-nav-link">Home</a>
+      <a href="about.html" class="cm-nav-link active">About</a>
+      <a href="projects.html" class="cm-nav-link">Work</a>
+      <a href="contact.html" class="cm-nav-link">Contact</a>
     </nav>
-    <a href="contact.html" class="btn-contact">Contact &bull;</a>
+
+    <div class="cm-nav-actions">
+      <div class="cm-status-badge">
+        <span class="cm-pulse-dot"></span>
+        <span>Available for Q1/Q2</span>
+      </div>
+      <a href="contact.html" class="cm-btn-nav">
+        <span>Get in touch</span>
+        <i class="fas fa-arrow-right cm-btn-icon-small"></i>
+      </a>
+      <button class="cm-mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </header>
 
-  <main class="social-connect-main">
-    <!-- Heading -->
-    <div class="sc-heading">
-      <h1 class="sc-title">About <span class="sc-title-white">Me</span></h1>
-      <p class="sc-subtitle">
-        Passionate about crafting clean, reusable code and delightful user interfaces. With experience in full-stack
-        development, I bridge the gap between complex backend logic and pixel-perfect frontend design.
-      </p>
-    </div>
+  <!-- Mobile Menu Overlay -->
+  <div class="cm-mobile-menu">
+    <a href="index.html" class="cm-mobile-link">Home</a>
+    <a href="about.html" class="cm-mobile-link active">About</a>
+    <a href="projects.html" class="cm-mobile-link">Work</a>
+    <a href="contact.html" class="cm-mobile-link">Contact</a>
+  </div>
 
-    <!-- Glowing Social Container -->
-    <div class="sc-outer">
-      <div class="sc-glowing-box">
-        <h2>Skills & Tech Stack</h2>
-        <div class="skills-cloud skills-container">
-          <span class="tag skill-tag-large">Modern JavaScript</span>
-          <span class="tag skill-tag-large">React & Next.js</span>
-          <span class="tag skill-tag-large">Node.js</span>
-          <span class="tag skill-tag-large">UI/UX Design</span>
-          <span class="tag skill-tag-large">HTML5/CSS</span>
+  <!-- Main About Hero Section -->
+  <main class="cm-section cm-about-hero">
+    <div class="cm-container">
+      
+      <div class="cm-about-grid">
+        
+        <!-- Story & Philosophy Column -->
+        <div class="reveal">
+          <div class="cm-section-tag">
+            <i class="fas fa-fingerprint"></i> The Designer & Engineer
+          </div>
+          <h1 class="cm-section-title cm-about-title-spacing">
+            Bridging the gap between <span class="highlight">aesthetic beauty</span> & technical precision.
+          </h1>
+          <p class="cm-about-bio-text">
+            Hello, I'm <strong>Josh</strong>. I operate at the intersection of product design and full-stack software development. With over four years of experience building digital products, I focus on turning complex challenges into streamlined, enjoyable experiences.
+          </p>
+          <p class="cm-about-bio-text">
+            My philosophy is grounded in <strong>intentional craftsmanship</strong>: clean codebases, thoughtful typography, balanced whitespace, and purposeful micro-interactions that elevate brand value and convert users.
+          </p>
+
+          <div class="cm-about-buttons-row">
+            <a href="contact.html" class="cm-btn-primary">
+              <span>Let's Collaborate</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="projects.html" class="cm-btn-secondary">
+              <span>View Portfolio</span>
+            </a>
+          </div>
         </div>
+
+        <!-- Visual Portrait Frame -->
+        <div class="cm-about-image-card reveal">
+          <img src="/profile.jpg" alt="Josh Portrait" class="cm-about-img" />
+        </div>
+
       </div>
+
     </div>
   </main>
 
-  <footer class="container">
-    <p>&copy; 2025 Kuti Josh. Built with Passion.</p>
+  <!-- Creative Methodology / Process Section (Creative Mints Style) -->
+  <section class="cm-section cm-section-process-bg">
+    <div class="cm-container">
+      
+      <div class="cm-section-header reveal">
+        <div class="cm-section-tag">
+          <i class="fas fa-compass-drafting"></i> Methodology & Workflow
+        </div>
+        <h2 class="cm-section-title">How I take ideas from <span class="highlight">concept to launch</span>.</h2>
+        <p class="cm-section-desc">A structured yet adaptive engineering and design process designed to deliver exceptional results reliably.</p>
+      </div>
+
+      <div class="cm-process-grid">
+
+        <div class="cm-process-card reveal">
+          <div class="cm-process-step">01</div>
+          <h3 class="cm-process-title">Discover & Architect</h3>
+          <p class="cm-process-desc">
+            Deep dive into project requirements, user behavior, architecture blueprints, data models, and business objectives.
+          </p>
+        </div>
+
+        <div class="cm-process-card reveal">
+          <div class="cm-process-step">02</div>
+          <h3 class="cm-process-title">Design & Prototype</h3>
+          <p class="cm-process-desc">
+            Wireframing, interactive Figma prototypes, design system tokens, responsive grids, and micro-interaction exploration.
+          </p>
+        </div>
+
+        <div class="cm-process-card reveal">
+          <div class="cm-process-step">03</div>
+          <h3 class="cm-process-title">Modern Full-Stack Build</h3>
+          <p class="cm-process-desc">
+            Writing scalable, maintainable code using modern TypeScript, React, Next.js, Node.js, Supabase, and Tailwind CSS.
+          </p>
+        </div>
+
+        <div class="cm-process-card reveal">
+          <div class="cm-process-step">04</div>
+          <h3 class="cm-process-title">Optimize & Deploy</h3>
+          <p class="cm-process-desc">
+            Lighthouse performance auditing, SEO optimization, cross-browser testing, automated CI/CD deployment, and ongoing refinement.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section class="cm-section">
+    <div class="cm-container">
+      
+      <div class="cm-section-header reveal">
+        <div class="cm-section-tag">
+          <i class="fas fa-layer-group"></i> Technical Competencies
+        </div>
+        <h2 class="cm-section-title">Technologies & <span class="highlight">Tools of Choice</span>.</h2>
+        <p class="cm-section-desc">Continuously expanding stack focusing on high-performance web tooling and modern frameworks.</p>
+      </div>
+
+      <div class="cm-skills-matrix">
+
+        <!-- Frontend Development -->
+        <div class="cm-skill-category-card reveal">
+          <div class="cm-skill-cat-header">
+            <div class="cm-skill-cat-icon"><i class="fab fa-react"></i></div>
+            <h3 class="cm-skill-cat-title">Frontend Engineering</h3>
+          </div>
+          <div class="cm-skill-pill-list">
+            <span class="cm-skill-pill">TypeScript</span>
+            <span class="cm-skill-pill">React.js</span>
+            <span class="cm-skill-pill">Next.js</span>
+            <span class="cm-skill-pill">Tailwind CSS</span>
+            <span class="cm-skill-pill">JavaScript (ES6+)</span>
+            <span class="cm-skill-pill">HTML5 & CSS3</span>
+            <span class="cm-skill-pill">Vite</span>
+            <span class="cm-skill-pill">GSAP Motion</span>
+          </div>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div class="cm-skill-category-card reveal">
+          <div class="cm-skill-cat-header">
+            <div class="cm-skill-cat-icon"><i class="fas fa-server"></i></div>
+            <h3 class="cm-skill-cat-title">Backend & APIs</h3>
+          </div>
+          <div class="cm-skill-pill-list">
+            <span class="cm-skill-pill">Node.js</span>
+            <span class="cm-skill-pill">Supabase</span>
+            <span class="cm-skill-pill">Express.js</span>
+            <span class="cm-skill-pill">PostgreSQL</span>
+            <span class="cm-skill-pill">Vite</span>
+            <span class="cm-skill-pill">Authentication & JWT</span>
+            <span class="cm-skill-pill">Serverless Functions</span>
+          </div>
+        </div>
+
+        <!-- UI/UX & Design Systems -->
+        <div class="cm-skill-category-card reveal">
+          <div class="cm-skill-cat-header">
+            <div class="cm-skill-cat-icon"><i class="fas fa-bezier-curve"></i></div>
+            <h3 class="cm-skill-cat-title">Design & Architecture</h3>
+          </div>
+          <div class="cm-skill-pill-list">
+            <span class="cm-skill-pill">Figma Prototyping</span>
+            <span class="cm-skill-pill">UI/UX Systems</span>
+            <span class="cm-skill-pill">Design Tokens</span>
+            <span class="cm-skill-pill">Wireframing</span>
+            <span class="cm-skill-pill">Responsive Layouts</span>
+            <span class="cm-skill-pill">Git & GitHub</span>
+            <span class="cm-skill-pill">Vercel Deployment</span>
+            <span class="cm-skill-pill">SEO & Web Core Vitals</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cm-cta-section">
+    <div class="cm-container">
+      <div class="cm-cta-box reveal">
+        <h2 class="cm-cta-title">Looking for a developer who understands design?</h2>
+        <p class="cm-cta-desc">Let's discuss how we can bring your next idea to reality with premium quality and swift delivery.</p>
+        <div class="cm-cta-actions">
+          <a href="contact.html" class="cm-btn-primary">
+            <span>Get In Touch</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="projects.html" class="cm-btn-secondary">
+            <span>Browse Case Studies</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="cm-footer">
+    <div class="cm-container">
+      <div class="cm-footer-grid">
+        <div class="cm-footer-brand">
+          <a href="index.html" class="cm-logo">
+            <span>Josh</span><span class="cm-logo-symbol">&reg;</span>
+          </a>
+          <p class="cm-footer-brand-desc">
+            Designing and developing digital experiences that fuse engineering excellence with sophisticated visual design.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Navigation</h4>
+          <div class="cm-footer-links">
+            <a href="index.html" class="cm-footer-link">Home</a>
+            <a href="about.html" class="cm-footer-link">About & Philosophy</a>
+            <a href="projects.html" class="cm-footer-link">Selected Work</a>
+            <a href="contact.html" class="cm-footer-link">Get In Touch</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Social Channels</h4>
+          <div class="cm-footer-links">
+            <a href="https://www.linkedin.com/in/kuti-joshua-53532836b" target="_blank" rel="noopener" class="cm-footer-link">LinkedIn</a>
+            <a href="https://x.com/Josh34981" target="_blank" rel="noopener" class="cm-footer-link">Twitter / X</a>
+            <a href="https://github.com/kutijoshua76-ai" target="_blank" rel="noopener" class="cm-footer-link">GitHub</a>
+            <a href="https://wa.me/message/GCAQ5Q5MFRXKP1" target="_blank" rel="noopener" class="cm-footer-link">WhatsApp</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Direct Inquiries</h4>
+          <div class="cm-footer-links">
+            <a href="mailto:kutijoshua76@gmail.com" class="cm-footer-link">kutijoshua76@gmail.com</a>
+            <span class="cm-footer-link cm-text-faint-custom">All locations, Currently in Nigeria</span>
+            <span class="cm-footer-link cm-text-online-custom">&bull; Open for Contracts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cm-footer-bottom">
+        <p class="cm-footer-copy">&copy; 2025 Josh&reg;. Crafted with intention and code.</p>
+        <p class="cm-footer-copy">Built with passion @ JOSH</p>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 
 </html>

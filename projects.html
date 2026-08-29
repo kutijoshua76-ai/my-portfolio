@@ -5,120 +5,295 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | My Portfolio</title>
+  <meta name="description" content="Selected Works by Josh® — Explore web platforms, e-commerce storefronts, and digital experiences." />
+  <title>Selected Works & Case Studies | Josh®</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="./src/style.css" />
 </head>
 
 <body>
-  <div class="bg-motion bg-projects"></div>
 
-  <!-- New Dark Header -->
-  <header class="derek-header">
-    <div class="logo">Josh&reg;</div>
-    <nav class="derek-nav">
-      <a href="index.html" class="nav-item">Home</a>
-      <a href="about.html" class="nav-item">About</a>
-      <a href="projects.html" class="nav-item">Work</a>
-      <a href="contact.html" class="nav-item">Contact</a>
+  <!-- Creative Mints Header -->
+  <header class="cm-header">
+    <a href="index.html" class="cm-logo">
+      <span>Josh</span><span class="cm-logo-symbol">&reg;</span>
+    </a>
+
+    <nav class="cm-nav-center">
+      <a href="index.html" class="cm-nav-link">Home</a>
+      <a href="about.html" class="cm-nav-link">About</a>
+      <a href="projects.html" class="cm-nav-link active">Work</a>
+      <a href="contact.html" class="cm-nav-link">Contact</a>
     </nav>
-    <a href="contact.html" class="btn-contact">Contact &bull;</a>
+
+    <div class="cm-nav-actions">
+      <div class="cm-status-badge">
+        <span class="cm-pulse-dot"></span>
+        <span>Available for Q1/Q2</span>
+      </div>
+      <a href="contact.html" class="cm-btn-nav">
+        <span>Get in touch</span>
+        <i class="fas fa-arrow-right cm-btn-icon-small"></i>
+      </a>
+      <button class="cm-mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </header>
 
-  <main class="social-connect-main">
-    <!-- Heading -->
-    <div class="sc-heading">
-      <h1 class="sc-title">Selected <span class="sc-title-white">Work</span></h1>
-      <p class="sc-subtitle">
-        A curated collection of modern websites, e-commerce storefronts, and web platforms crafted with passion and detail.
-      </p>
-    </div>
+  <!-- Mobile Menu Overlay -->
+  <div class="cm-mobile-menu">
+    <a href="index.html" class="cm-mobile-link">Home</a>
+    <a href="about.html" class="cm-mobile-link">About</a>
+    <a href="projects.html" class="cm-mobile-link active">Work</a>
+    <a href="contact.html" class="cm-mobile-link">Contact</a>
+  </div>
 
-    <!-- Glowing Projects Container -->
-    <div class="sc-outer wide">
-      <div class="sc-glowing-box">
-        <div class="projects-grid">
-          <!-- Project 1: FlySphere -->
-          <div class="project-card glass reveal">
-            <img src="/fly_sphere.jpg" alt="FlySphere Brand" class="project-img">
-            <div class="project-overlay">
-              <div class="project-info">
-                <div class="project-tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Next.js</span>
-                </div>
-                <h3>FlySphere</h3>
-                <p class="project-desc-small">A rebranded and modernized multi-page platform offering comprehensive
-                  aviation services and plane details.</p>
-                <a href="https://fly-sphere-drkzjhpwv-kutijoshua76-ais-projects.vercel.app" target="_blank" rel="noopener"
-                  class="btn btn-primary btn-small">View Project</a>
-              </div>
-            </div>
+  <!-- Main Work Gallery -->
+  <main class="cm-section cm-section-pt-nav">
+    <div class="cm-container">
+      
+      <!-- Page Header -->
+      <div class="cm-section-header reveal">
+        <div class="cm-section-tag">
+          <i class="fas fa-layer-group"></i> Portfolio Archive &bull; 2024&ndash;2026
+        </div>
+        <h1 class="cm-section-title">Selected <span class="highlight">Works & Platforms</span></h1>
+        <p class="cm-section-desc">
+          A curated collection of modern web applications, e-commerce storefronts, and brand interfaces built with clean architecture, fluid motion, and conversion-focused UX.
+        </p>
+      </div>
+
+      <!-- Interactive Filter Bar -->
+      <div class="cm-filters-row reveal">
+        <button class="cm-filter-btn active" data-filter="all">All Projects (5)</button>
+        <button class="cm-filter-btn" data-filter="web-apps">Web Applications</button>
+        <button class="cm-filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="cm-filter-btn" data-filter="uiux">UI/UX & Branding</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="cm-projects-grid">
+
+        <!-- Project 1: FlySphere -->
+        <div class="cm-project-card reveal" data-category="web-apps uiux">
+          <div class="cm-card-media">
+            <span class="cm-card-badge">Web Application &bull; 2025</span>
+            <img src="/fly_sphere.jpg" alt="FlySphere Brand Platform" class="cm-card-img" />
           </div>
-
-          <!-- Project 2: Trendy Threads -->
-          <div class="project-card glass reveal">
-            <img src="/trendy_threads.png" alt="Trendy Threads" class="project-img">
-            <div class="project-overlay">
-              <div class="project-info">
-                <div class="project-tags">
-                  <span class="tag">Vite</span>
-                  <span class="tag">Tailwind</span>
-                </div>
-                <h3>Trendy Threads</h3>
-                <p class="project-desc-small">A completely responsive and clean multi-page e-commerce website for a modern
-                  clothing brand.</p>
-                <a href="https://clothing-brand-website-mi7ehdv47-kutijoshua76-ais-projects.vercel.app" target="_blank"
-                  rel="noopener" class="btn btn-primary btn-small">View Project</a>
+          <div class="cm-card-content">
+            <div>
+              <div class="cm-card-tags">
+                <span class="cm-tag">React</span>
+                <span class="cm-tag">Next.js</span>
+                <span class="cm-tag">Tailwind CSS</span>
+                <span class="cm-tag">Aviation</span>
               </div>
+              <h2 class="cm-card-title">FlySphere Aviation Platform</h2>
+              <p class="cm-card-desc">
+                A modernized multi-page digital aviation platform offering comprehensive private charter booking, real-time aircraft specifications, fleet comparison tools, and immersive luxury imagery.
+              </p>
             </div>
-          </div>
-
-          <!-- Project 3: Hair by Helen -->
-          <div class="project-card glass reveal">
-            <img src="/hair_by_helen.png" alt="Hair by Helen" class="project-img">
-            <div class="project-overlay">
-              <div class="project-info">
-                <div class="project-tags">
-                  <span class="tag">UI/UX</span>
-                  <span class="tag">E-commerce</span>
-                </div>
-                <h3>Hair by Helen</h3>
-                <p class="project-desc-small">An elegant online storefront for a premium salon and high-quality hair care
-                  products.</p>
-                <a href="https://hairbyhelen-br754jf9u-kutijoshua76-ais-projects.vercel.app" target="_blank"
-                  rel="noopener" class="btn btn-primary btn-small">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: Impact House Church -->
-          <div class="project-card glass reveal">
-            <img src="/impact_house.jpg" alt="Impact House Church Platform" class="project-img">
-            <div class="project-overlay">
-              <div class="project-info">
-                <div class="project-tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Node.js</span>
-                </div>
-                <h3>Impact House Church Platform</h3>
-                <p class="project-desc-small">A comprehensive community platform designed to foster social impact and
-                  spiritual connection.</p>
-                <a href="https://rccgimpacthouse.org" target="_blank" rel="noopener"
-                  class="btn btn-primary btn-small">View Project</a>
-              </div>
+            <div class="cm-card-footer">
+              <a href="https://fly-sphere-drkzjhpwv-kutijoshua76-ais-projects.vercel.app" target="_blank" rel="noopener" class="cm-btn-view">
+                <span>View Live Deployment</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+              <span class="cm-tag cm-tag-status-live">Live on Vercel</span>
             </div>
           </div>
         </div>
+
+        <!-- Project 2: Trendy Threads -->
+        <div class="cm-project-card reveal" data-category="ecommerce uiux">
+          <div class="cm-card-media">
+            <span class="cm-card-badge">E-Commerce &bull; 2025</span>
+            <img src="/trendy_threads.png" alt="Trendy Threads Fashion Store" class="cm-card-img" />
+          </div>
+          <div class="cm-card-content">
+            <div>
+              <div class="cm-card-tags">
+                <span class="cm-tag">Vite</span>
+                <span class="cm-tag">Tailwind CSS</span>
+                <span class="cm-tag">JavaScript</span>
+                <span class="cm-tag">Storefront</span>
+              </div>
+              <h2 class="cm-card-title">Trendy Threads Apparel</h2>
+              <p class="cm-card-desc">
+                A fast, fully responsive e-commerce web platform for an urban clothing line. Features dynamic product filtering, interactive cart state, size guides, and high-conversion product checkout flows.
+              </p>
+            </div>
+            <div class="cm-card-footer">
+              <a href="https://clothing-brand-website-mi7ehdv47-kutijoshua76-ais-projects.vercel.app" target="_blank" rel="noopener" class="cm-btn-view">
+                <span>View Live Deployment</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+              <span class="cm-tag cm-tag-status-live">Live on Vercel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Hair by Helen -->
+        <div class="cm-project-card reveal" data-category="ecommerce uiux">
+          <div class="cm-card-media">
+            <span class="cm-card-badge">Brand Store &bull; 2024</span>
+            <img src="/hair_by_helen.png" alt="Hair by Helen Store" class="cm-card-img" />
+          </div>
+          <div class="cm-card-content">
+            <div>
+              <div class="cm-card-tags">
+                <span class="cm-tag">UI/UX Design</span>
+                <span class="cm-tag">E-Commerce</span>
+                <span class="cm-tag">Luxury Brand</span>
+              </div>
+              <h2 class="cm-card-title">Hair by Helen Studio</h2>
+              <p class="cm-card-desc">
+                An elegant digital storefront and appointment booking interface for a boutique salon brand. Designed with soft luxury aesthetics, product catalogs, service menus, and client testimonials.
+              </p>
+            </div>
+            <div class="cm-card-footer">
+              <a href="https://hairbyhelen-br754jf9u-kutijoshua76-ais-projects.vercel.app" target="_blank" rel="noopener" class="cm-btn-view">
+                <span>View Live Deployment</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+              <span class="cm-tag cm-tag-status-live">Live on Vercel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Impact House Church Platform -->
+        <div class="cm-project-card reveal" data-category="web-apps">
+          <div class="cm-card-media">
+            <span class="cm-card-badge">Community Platform &bull; 2024</span>
+            <img src="/impact_house.jpg" alt="Impact House Church Platform" class="cm-card-img" />
+          </div>
+          <div class="cm-card-content">
+            <div>
+              <div class="cm-card-tags">
+                <span class="cm-tag">React</span>
+                <span class="cm-tag">Node.js</span>
+                <span class="cm-tag">CMS Integration</span>
+                <span class="cm-tag">Events</span>
+              </div>
+              <h2 class="cm-card-title">Impact House Community Hub</h2>
+              <p class="cm-card-desc">
+                A comprehensive digital portal designed to connect members, streamline sermon broadcasts, manage ministry event registrations, and facilitate online donations with secure payment gateways.
+              </p>
+            </div>
+            <div class="cm-card-footer">
+              <a href="https://rccgimpacthouse.org" target="_blank" rel="noopener" class="cm-btn-view">
+                <span>View Official Website</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+              <span class="cm-tag cm-tag-status-live">Production</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Airway Management Suite -->
+        <div class="cm-project-card reveal" data-category="web-apps uiux">
+          <div class="cm-card-media">
+            <span class="cm-card-badge">Design System &bull; 2025</span>
+            <img src="/airway_management.png" alt="Airway Management Suite" class="cm-card-img" />
+          </div>
+          <div class="cm-card-content">
+            <div>
+              <div class="cm-card-tags">
+                <span class="cm-tag">Dashboard</span>
+                <span class="cm-tag">Logistics</span>
+                <span class="cm-tag">Figma</span>
+                <span class="cm-tag">Design System</span>
+              </div>
+              <h2 class="cm-card-title">Airway Logistics Suite</h2>
+              <p class="cm-card-desc">
+                A high-density operational UI/UX interface engineered for flight operations tracking, fleet telemetry analytics, schedule planning, and airspace coordination.
+              </p>
+            </div>
+            <div class="cm-card-footer">
+              <a href="contact.html" class="cm-btn-view">
+                <span>Request Case Study Walkthrough</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <span class="cm-tag cm-tag-status-confidential">Confidential</span>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
   </main>
 
-  <footer class="container">
-    <p>&copy; 2025 Kuti Josh. Built with Passion.</p>
+  <!-- CTA Banner -->
+  <section class="cm-cta-section">
+    <div class="cm-container">
+      <div class="cm-cta-box reveal">
+        <h2 class="cm-cta-title">Ready to bring your next product vision to life?</h2>
+        <p class="cm-cta-desc">Whether you need an MVP built from scratch, an existing app overhauled, or a bespoke design system, I'm here to help.</p>
+        <div class="cm-cta-actions">
+          <a href="contact.html" class="cm-btn-primary">
+            <span>Schedule a Consultation</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="about.html" class="cm-btn-secondary">
+            <span>View My Process</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="cm-footer">
+    <div class="cm-container">
+      <div class="cm-footer-grid">
+        <div class="cm-footer-brand">
+          <a href="index.html" class="cm-logo">
+            <span>Josh</span><span class="cm-logo-symbol">&reg;</span>
+          </a>
+          <p class="cm-footer-brand-desc">
+            Designing and developing digital experiences that fuse engineering excellence with sophisticated visual design.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Navigation</h4>
+          <div class="cm-footer-links">
+            <a href="index.html" class="cm-footer-link">Home</a>
+            <a href="about.html" class="cm-footer-link">About & Philosophy</a>
+            <a href="projects.html" class="cm-footer-link">Selected Work</a>
+            <a href="contact.html" class="cm-footer-link">Get In Touch</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Social Channels</h4>
+          <div class="cm-footer-links">
+            <a href="https://www.linkedin.com/in/kuti-joshua-53532836b" target="_blank" rel="noopener" class="cm-footer-link">LinkedIn</a>
+            <a href="https://x.com/Josh34981" target="_blank" rel="noopener" class="cm-footer-link">Twitter / X</a>
+            <a href="https://github.com/kutijoshua76-ai" target="_blank" rel="noopener" class="cm-footer-link">GitHub</a>
+            <a href="https://wa.me/message/GCAQ5Q5MFRXKP1" target="_blank" rel="noopener" class="cm-footer-link">WhatsApp</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Direct Inquiries</h4>
+          <div class="cm-footer-links">
+            <a href="mailto:kutijoshua76@gmail.com" class="cm-footer-link">kutijoshua76@gmail.com</a>
+            <span class="cm-footer-link cm-text-faint-custom">All locations, Currently in Nigeria</span>
+            <span class="cm-footer-link cm-text-online-custom">&bull; Open for Contracts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cm-footer-bottom">
+        <p class="cm-footer-copy">&copy; 2025 Josh&reg;. Crafted with intention and code.</p>
+        <p class="cm-footer-copy">Built with passion @ JOSH</p>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 
 </html>

@@ -5,95 +5,238 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Kuti Josh Portfolio</title>
+  <meta name="description" content="Contact Josh® — Inquire about web development, UI/UX design, and digital engineering projects." />
+  <title>Get In Touch &bull; Start a Project | Josh®</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="./src/style.css" />
 </head>
 
 <body>
 
-  <!-- New Dark Header -->
-  <header class="derek-header">
-    <div class="logo">Josh&reg;</div>
-    <nav class="derek-nav">
-      <a href="index.html" class="nav-item">Home</a>
-      <a href="about.html" class="nav-item">About</a>
-      <a href="projects.html" class="nav-item">Work</a>
-      <a href="contact.html" class="nav-item">Contact</a>
+  <!-- Creative Mints Header -->
+  <header class="cm-header">
+    <a href="index.html" class="cm-logo">
+      <span>Josh</span><span class="cm-logo-symbol">&reg;</span>
+    </a>
+
+    <nav class="cm-nav-center">
+      <a href="index.html" class="cm-nav-link">Home</a>
+      <a href="about.html" class="cm-nav-link">About</a>
+      <a href="projects.html" class="cm-nav-link">Work</a>
+      <a href="contact.html" class="cm-nav-link active">Contact</a>
     </nav>
-    <a href="contact.html" class="btn-contact">Contact &bull;</a>
+
+    <div class="cm-nav-actions">
+      <div class="cm-status-badge">
+        <span class="cm-pulse-dot"></span>
+        <span>Available for Q1/Q2</span>
+      </div>
+      <a href="contact.html" class="cm-btn-nav">
+        <span>Get in touch</span>
+        <i class="fas fa-arrow-right cm-btn-icon-small"></i>
+      </a>
+      <button class="cm-mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </header>
 
-  <main class="social-connect-main">
-    <!-- Heading -->
-    <div class="sc-heading">
-      <h1 class="sc-title">Connect <span class="sc-title-white">With Me</span></h1>
-      <p class="sc-subtitle">Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and creative ideas.</p>
-    </div>
+  <!-- Mobile Menu Overlay -->
+  <div class="cm-mobile-menu">
+    <a href="index.html" class="cm-mobile-link">Home</a>
+    <a href="about.html" class="cm-mobile-link">About</a>
+    <a href="projects.html" class="cm-mobile-link">Work</a>
+    <a href="contact.html" class="cm-mobile-link active">Contact</a>
+  </div>
 
-    <!-- Glowing Social Container -->
-    <div class="sc-outer">
-      <div class="sc-glowing-box">
-        <div class="sc-icons-row">
+  <!-- Contact Section -->
+  <main class="cm-section cm-contact-hero">
+    <div class="cm-container">
+      
+      <!-- Section Header -->
+      <div class="cm-section-header reveal">
+        <div class="cm-section-tag">
+          <i class="fas fa-paper-plane"></i> Direct Inquiries
+        </div>
+        <h1 class="cm-section-title">Let's build something <span class="highlight">remarkable</span> together.</h1>
+        <p class="cm-section-desc">
+          Have an exciting project, a new venture, or an engineering role? Reach out through your preferred channel or send a direct project inquiry below.
+        </p>
+      </div>
 
-          <!-- WhatsApp -->
-          <a href="https://wa.me/message/GCAQ5Q5MFRXKP1" target="_blank" rel="noopener" class="sc-icon whatsapp">
-            <div class="sc-icon-circle">
+      <div class="cm-contact-grid">
+
+        <!-- Left Channels Pane -->
+        <div class="cm-contact-channels reveal">
+          
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/message/GCAQ5Q5MFRXKP1" target="_blank" rel="noopener" class="cm-contact-card-btn">
+            <div class="cm-contact-icon-box whatsapp">
               <i class="fab fa-whatsapp"></i>
             </div>
-            <span class="sc-label">WhatsApp</span>
+            <div class="cm-contact-info-text">
+              <span class="cm-contact-info-title">WhatsApp Chat</span>
+              <span class="cm-contact-info-sub">Instant messaging & quick calls</span>
+            </div>
+            <i class="fas fa-arrow-right cm-contact-arrow"></i>
           </a>
 
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/kuti-joshua-53532836b" target="_blank" rel="noopener" class="sc-icon linkedin">
-            <div class="sc-icon-circle">
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/kuti-joshua-53532836b" target="_blank" rel="noopener" class="cm-contact-card-btn">
+            <div class="cm-contact-icon-box linkedin">
               <i class="fab fa-linkedin-in"></i>
             </div>
-            <span class="sc-label">LinkedIn</span>
+            <div class="cm-contact-info-text">
+              <span class="cm-contact-info-title">LinkedIn Profile</span>
+              <span class="cm-contact-info-sub">Professional network & recommendations</span>
+            </div>
+            <i class="fas fa-arrow-right cm-contact-arrow"></i>
           </a>
 
-          <!-- Twitter / X -->
-          <a href="https://x.com/Josh34981" target="_blank" rel="noopener" class="sc-icon twitter">
-            <div class="sc-icon-circle">
+          <!-- Twitter / X Card -->
+          <a href="https://x.com/Josh34981" target="_blank" rel="noopener" class="cm-contact-card-btn">
+            <div class="cm-contact-icon-box twitter">
               <i class="fab fa-x-twitter"></i>
             </div>
-            <span class="sc-label">Twitter</span>
+            <div class="cm-contact-info-text">
+              <span class="cm-contact-info-title">Twitter / X</span>
+              <span class="cm-contact-info-sub">Tech thoughts, updates & DMs</span>
+            </div>
+            <i class="fas fa-arrow-right cm-contact-arrow"></i>
           </a>
 
-          <!-- GitHub -->
-          <a href="https://github.com/kutijoshua76-ai" target="_blank" rel="noopener" class="sc-icon github">
-            <div class="sc-icon-circle">
+          <!-- GitHub Card -->
+          <a href="https://github.com/kutijoshua76-ai" target="_blank" rel="noopener" class="cm-contact-card-btn">
+            <div class="cm-contact-icon-box github">
               <i class="fab fa-github"></i>
             </div>
-            <span class="sc-label">GitHub</span>
+            <div class="cm-contact-info-text">
+              <span class="cm-contact-info-title">GitHub Repositories</span>
+              <span class="cm-contact-info-sub">Open-source code, commits & projects</span>
+            </div>
+            <i class="fas fa-arrow-right cm-contact-arrow"></i>
           </a>
 
-          <!-- Email -->
-          <a href="mailto:kutijoshua76@gmail.com" class="sc-icon email">
-            <div class="sc-icon-circle">
+          <!-- Email Direct Card -->
+          <a href="mailto:kutijoshua76@gmail.com" class="cm-contact-card-btn">
+            <div class="cm-contact-icon-box email">
               <i class="fas fa-envelope"></i>
             </div>
-            <span class="sc-label">Email</span>
+            <div class="cm-contact-info-text">
+              <span class="cm-contact-info-title">Email Directly</span>
+              <span class="cm-contact-info-sub">kutijoshua76@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right cm-contact-arrow"></i>
           </a>
 
         </div>
-      </div>
-    </div>
 
-    <!-- Contact detail footer -->
-    <div class="sc-contact-detail">
-      <a href="mailto:kutijoshua76@gmail.com" class="sc-email-link">kutijoshua76@gmail.com</a>
-      <span class="sc-dot">&bull;</span>
-      <a href="tel:09048667567" class="sc-email-link">09048667567</a>
+        <!-- Right Inquiry Form Pane -->
+        <div class="cm-contact-form-card reveal">
+          <h2 class="cm-form-heading">Send a Project Inquiry</h2>
+          <p class="cm-form-subtitle">Fill out the details below and I'll get back to you within 24 hours.</p>
+
+          <form id="cmContactForm">
+            <div class="cm-form-group">
+              <label class="cm-form-label" for="clientName">Your Name / Organization</label>
+              <input type="text" id="clientName" name="name" class="cm-form-input" placeholder="e.g. Alex Morgan / Acme Studio" required />
+            </div>
+
+            <div class="cm-form-group">
+              <label class="cm-form-label" for="clientEmail">Email Address</label>
+              <input type="email" id="clientEmail" name="email" class="cm-form-input" placeholder="e.g. alex@example.com" required />
+            </div>
+
+            <div class="cm-form-group">
+              <label class="cm-form-label">Project Focus</label>
+              <div class="cm-service-pills">
+                <label class="cm-service-pill-label">
+                  <input type="radio" name="projectType" value="Full-Stack Web App" checked />
+                  <span class="cm-service-pill-content">Full-Stack Web App</span>
+                </label>
+                <label class="cm-service-pill-label">
+                  <input type="radio" name="projectType" value="UI/UX Redesign" />
+                  <span class="cm-service-pill-content">UI/UX Redesign</span>
+                </label>
+                <label class="cm-service-pill-label">
+                  <input type="radio" name="projectType" value="E-Commerce Store" />
+                  <span class="cm-service-pill-content">E-Commerce Store</span>
+                </label>
+                <label class="cm-service-pill-label">
+                  <input type="radio" name="projectType" value="Consulting / Other" />
+                  <span class="cm-service-pill-content">Consulting & Other</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="cm-form-group">
+              <label class="cm-form-label" for="clientMessage">Project Details / Message</label>
+              <textarea id="clientMessage" name="message" class="cm-form-textarea" placeholder="Tell me about your project goals, timelines, and scope..." required></textarea>
+            </div>
+
+            <button type="submit" class="cm-btn-submit">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
     </div>
   </main>
 
-  <footer class="container">
-    <p>&copy; 2025 Kuti Josh. Built with Passion.</p>
+  <!-- Footer -->
+  <footer class="cm-footer">
+    <div class="cm-container">
+      <div class="cm-footer-grid">
+        <div class="cm-footer-brand">
+          <a href="index.html" class="cm-logo">
+            <span>Josh</span><span class="cm-logo-symbol">&reg;</span>
+          </a>
+          <p class="cm-footer-brand-desc">
+            Designing and developing digital experiences that fuse engineering excellence with sophisticated visual design.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Navigation</h4>
+          <div class="cm-footer-links">
+            <a href="index.html" class="cm-footer-link">Home</a>
+            <a href="about.html" class="cm-footer-link">About & Philosophy</a>
+            <a href="projects.html" class="cm-footer-link">Selected Work</a>
+            <a href="contact.html" class="cm-footer-link">Get In Touch</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Social Channels</h4>
+          <div class="cm-footer-links">
+            <a href="https://www.linkedin.com/in/kuti-joshua-53532836b" target="_blank" rel="noopener" class="cm-footer-link">LinkedIn</a>
+            <a href="https://x.com/Josh34981" target="_blank" rel="noopener" class="cm-footer-link">Twitter / X</a>
+            <a href="https://github.com/kutijoshua76-ai" target="_blank" rel="noopener" class="cm-footer-link">GitHub</a>
+            <a href="https://wa.me/message/GCAQ5Q5MFRXKP1" target="_blank" rel="noopener" class="cm-footer-link">WhatsApp</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="cm-footer-col-title">Direct Inquiries</h4>
+          <div class="cm-footer-links">
+            <a href="mailto:kutijoshua76@gmail.com" class="cm-footer-link">kutijoshua76@gmail.com</a>
+            <span class="cm-footer-link cm-text-faint-custom">All locations, Currently in Nigeria</span>
+            <span class="cm-footer-link cm-text-online-custom">&bull; Open for Contracts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cm-footer-bottom">
+        <p class="cm-footer-copy">&copy; 2025 Josh&reg;. Crafted with intention and code.</p>
+        <p class="cm-footer-copy">Built with passion @ JOSH</p>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
-
