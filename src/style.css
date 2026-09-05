@@ -1575,12 +1575,34 @@ img {
 }
 
 @media (max-width: 820px) {
+  /* Recalculate nav height for mobile — header is slightly shorter */
+  :root {
+    --cm-nav-height: 70px;
+  }
+
   .cm-nav-center {
     display: none;
   }
 
   .cm-mobile-toggle {
     display: flex;
+  }
+
+  /* Ensure hero sections clear the fixed nav on mobile */
+  .cm-hero {
+    padding-top: calc(var(--cm-nav-height) + 2.5rem);
+  }
+
+  .cm-about-hero {
+    padding-top: calc(var(--cm-nav-height) + 3rem);
+  }
+
+  .cm-contact-hero {
+    padding-top: calc(var(--cm-nav-height) + 3rem);
+  }
+
+  .cm-section-pt-nav {
+    padding-top: calc(var(--cm-nav-height) + 3rem);
   }
 
   .cm-projects-grid {
@@ -1803,6 +1825,17 @@ img {
 
   .cm-page-hero-title {
     font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  /* Extra buffer for all hero sections on small phones */
+  .cm-hero {
+    padding-top: calc(var(--cm-nav-height) + 3rem);
+  }
+
+  .cm-about-hero,
+  .cm-contact-hero,
+  .cm-section-pt-nav {
+    padding-top: calc(var(--cm-nav-height) + 3.5rem);
   }
 }
 
